@@ -26,5 +26,25 @@ console.log(sentence)
 let n: null = null;
 let u: undefined = undefined;
 
-let isNew: boolean = null;
-let myName: string = undefined;
+
+
+
+let list1: number[] = [1,2,3];
+let list2: Array<Number> = [1, 2, 3];
+
+let person1: [string, number] = ['Chris', 22];
+
+enum Color {Red = 5, Green, Blue};
+
+let c: Color = Color.Green;
+console.log(c);
+
+let randomValue: any = 10;
+randomValue = true;
+randomValue = 'Vishwas';
+
+let myVariable: any = 10;
+
+console.log(myVariable.name);
+myVariable();
+myVariable.toUpperCase();
