@@ -14,7 +14,6 @@ console.log(sentence);
 var n = null;
 var u = undefined;
 var list1 = [1, 2, 3];
-var list2 = [1, 2, 3];
 var person1 = ['Chris', 22];
 var Color;
 (function (Color) {
@@ -25,3 +24,28 @@ var Color;
 ;
 var c = Color.Green;
 console.log(c);
+var randomValue = 10;
+randomValue = true;
+randomValue = 'Vishwas';
+var newVariable = 10;
+newVariable.toUpperCase;
+//javascript
+// function add(num1, num2) {
+//     return num1 + num2; 
+// }
+//typescript
+function add(num1, num2) {
+    if (num2 === void 0) { num2 = 10; }
+    return num1 + num2;
+}
+//expected behavour: pass
+add(5, 10);
+add(5);
+function fullName(person) {
+    console.log("".concat(person.firstName, " ").concat(person.lastName));
+}
+var p = {
+    firstName: "Bruce",
+    lastName: 'WAyne'
+};
+fullName(p);

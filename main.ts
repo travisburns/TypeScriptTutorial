@@ -30,7 +30,7 @@ let u: undefined = undefined;
 
 
 let list1: number[] = [1,2,3];
-let list2: Array<Number> = [1, 2, 3];
+
 
 let person1: [string, number] = ['Chris', 22];
 
@@ -43,8 +43,46 @@ let randomValue: any = 10;
 randomValue = true;
 randomValue = 'Vishwas';
 
-let myVariable: any = 10;
 
-console.log(myVariable.name);
-myVariable();
-myVariable.toUpperCase();
+
+
+
+
+let newVariable: unknown = 10;
+
+(newVariable as string).toUpperCase
+
+//javascript
+// function add(num1, num2) {
+//     return num1 + num2; 
+// }
+//typescript
+function add(num1: number, num2: number = 10): number {
+    return num1 + num2;
+}
+
+
+//expected behavour: pass
+add(5, 10);
+
+
+add(5);
+
+
+interface Person {
+    firstName: string;
+    lastName?: string;
+}
+
+function fullName(person: Person) {
+    console.log(`${person.firstName} ${person.lastName}`)
+}
+
+
+let p = {
+    firstName: "Bruce",
+    
+}
+
+
+fullName(p);
